@@ -5,7 +5,7 @@ Created on Mon Oct  3 16:28:50 2022
 @author: neelkh
 """
 
-from _Multilayer_Perceptron import Multilayer_Perceptron
+from multilayer_perceptron import Multilayer_Perceptron
 import numpy as np
 
 
@@ -14,7 +14,7 @@ for seeed in range(4):
     # print('Multilayer perceptron with weights : \n')
     np.random.seed(seeed)
     
-    w1 = np.random.ranf((8,3))
+    w1 = np.random.ranf((2,3))
     b1 = np.random.ranf((1,3))
     
     
@@ -27,7 +27,7 @@ for seeed in range(4):
     
     mlp = Multilayer_Perceptron(w1, b1, w2, b2, w3, b3)
     
-    x = np.array([1,1,3,5,8,13,21,34])
+    x = np.array([1,1])
     
     print('\n Multilayer perceptron with weights : \n')
     print('w1 \n', w1, '\n', 'w2 \n', w2, '\n', 'w3 \n', w3)
@@ -37,4 +37,4 @@ for seeed in range(4):
     
     y = mlp.forward(x)
 
-    print('Y is :', y)
+    print('\n Y is :', y, '\n ----------------------')
