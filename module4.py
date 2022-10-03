@@ -27,7 +27,7 @@ for seeed in range(4):
     
     mlp = Multilayer_Perceptron(w1, b1, w2, b2, w3, b3)
     
-    x = np.array([1,1])
+    x = np.array([5,50])
     
     print('\n Multilayer perceptron with weights : \n')
     print('w1 \n', w1, '\n', 'w2 \n', w2, '\n', 'w3 \n', w3)
